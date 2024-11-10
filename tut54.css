@@ -1,0 +1,82 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+}
+html{
+    
+    font-size: 60%;
+}
+body{
+    background-color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.tag{
+    font-size: 2rem;
+}
+.hamburger{
+    display: none;
+    /* position: absolute; */
+    cursor: pointer;
+}
+nav a{
+text-decoration: none;
+font-size: medium;
+padding: 3px 5px;
+font-size: 1rem;
+margin-left: 10px;
+transition: 0.5s ease;
+}
+nav a:hover,nav a:active{
+    border-bottom: 2px solid red;
+   
+    padding:8px 0px;
+    color: red;
+}
+nav.open{
+    display: block;
+}
+.lists{
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width:845px){
+    .hamburger{
+        display: block;
+    }
+    nav{
+    /* float: right; */
+    /* display: none; */
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    width: 50%;
+    font-size: 1rem;
+    background-color: rgb(34, 32, 32);
+    /* display: block; */
+    padding:  1rem 0rem;
+    margin-left: 60%;
+    border-left: 2px solid red;
+    border-bottom-left-radius:1.5rem;
+    border-top: 2px solid rgb(95, 97, 95);
+    /* display: flex; */
+    /* flex-direction: column; */
+    border-bottom-left-radius: 0.5rem;
+    cursor: pointer;
+    
+}
+nav a:hover{
+    border-bottom-left-radius: 0.5rem;
+    border-top: 2px solid red;
+    border-top-left-radius: 0.5rem;
+
+}
+
+}
